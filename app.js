@@ -61,6 +61,7 @@ app.post("/initiate-call", (req, res) => {
         res.status(400).send(result.failed[0].response);
       } else {
         res.status(200).send(result);
+        console.log("200 mast")
       }
     });
   } else if (calleeInfo.platform === "ANDROID") {
@@ -82,12 +83,18 @@ app.post("/initiate-call", (req, res) => {
     FCM.send(message, function (err, response) {
       if (err) {
         res.status(200).send(response);
+        console.log("200 mast")
+
       } else {
         res.status(400).send(response);
+        console.log("400 !mast")
+
       }
     });
   } else {
     res.status(400).send("Not supported platform");
+    console.log("400 Not supported platform")
+
   }
 });
 
@@ -118,8 +125,12 @@ app.post("/update-call", (req, res) => {
   FCM.send(message, function (err, response) {
     if (err) {
       res.status(200).send(response);
+      console.log("200 mast")
+
     } else {
       res.status(400).send(response);
+      console.log("400 !mast")
+
     }
   });
 });
