@@ -1,33 +1,33 @@
-[debug] [2023-12-01T09:42:33.697Z] ----------------------------------------------------------------------
-[debug] [2023-12-01T09:42:33.699Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\starr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
-[debug] [2023-12-01T09:42:33.699Z] CLI Version:   12.9.1
-[debug] [2023-12-01T09:42:33.700Z] Platform:      win32
-[debug] [2023-12-01T09:42:33.700Z] Node Version:  v18.15.0
-[debug] [2023-12-01T09:42:33.701Z] Time:          Fri Dec 01 2023 15:12:33 GMT+0530 (India Standard Time)
-[debug] [2023-12-01T09:42:33.701Z] ----------------------------------------------------------------------
+[debug] [2023-12-01T09:52:03.572Z] ----------------------------------------------------------------------
+[debug] [2023-12-01T09:52:03.574Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\starr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2023-12-01T09:52:03.575Z] CLI Version:   12.9.1
+[debug] [2023-12-01T09:52:03.575Z] Platform:      win32
+[debug] [2023-12-01T09:52:03.575Z] Node Version:  v18.15.0
+[debug] [2023-12-01T09:52:03.576Z] Time:          Fri Dec 01 2023 15:22:03 GMT+0530 (India Standard Time)
+[debug] [2023-12-01T09:52:03.576Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-12-01T09:42:33.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-12-01T09:42:33.786Z] > authorizing via signed-in user (merchant.rishita2912@gmail.com)
-[debug] [2023-12-01T09:42:33.786Z] [iam] checking project react-native-callkit for permissions ["firebase.projects.get"]
-[debug] [2023-12-01T09:42:33.789Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions [none]
-[debug] [2023-12-01T09:42:33.789Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions x-goog-quota-user=projects/react-native-callkit
-[debug] [2023-12-01T09:42:33.789Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2023-12-01T09:42:35.483Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions 200
-[debug] [2023-12-01T09:42:35.483Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {}
-[debug] [2023-12-01T09:42:35.484Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project react-native-callkit:
+[debug] [2023-12-01T09:52:03.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-01T09:52:03.635Z] > authorizing via signed-in user (merchant.rishita2912@gmail.com)
+[debug] [2023-12-01T09:52:03.635Z] [iam] checking project react-native-callkit for permissions ["firebase.projects.get"]
+[debug] [2023-12-01T09:52:03.637Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions [none]
+[debug] [2023-12-01T09:52:03.637Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions x-goog-quota-user=projects/react-native-callkit
+[debug] [2023-12-01T09:52:03.638Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-01T09:52:05.391Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions 200
+[debug] [2023-12-01T09:52:05.393Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {}
+[debug] [2023-12-01T09:52:05.393Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project react-native-callkit:
 
   firebase.projects.get
-[debug] [2023-12-01T09:42:35.488Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-12-01T09:42:35.489Z] defaultcredentials: writing to file C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
-[debug] [2023-12-01T09:42:35.491Z] DEBUG: Setting GAC to C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
-[debug] [2023-12-01T09:42:35.492Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig [none]
-[debug] [2023-12-01T09:42:35.938Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig 403
-[debug] [2023-12-01T09:42:35.938Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2023-12-01T09:42:35.940Z] Failed to get Admin SDK config for react-native-callkit, falling back to cache Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"HTTP Error: 403, The caller does not have permission","status":403},"status":500}
+[debug] [2023-12-01T09:52:05.399Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-01T09:52:05.402Z] defaultcredentials: writing to file C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
+[debug] [2023-12-01T09:52:05.404Z] DEBUG: Setting GAC to C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
+[debug] [2023-12-01T09:52:05.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig [none]
+[debug] [2023-12-01T09:52:05.938Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig 403
+[debug] [2023-12-01T09:52:05.939Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-12-01T09:52:05.940Z] Failed to get Admin SDK config for react-native-callkit, falling back to cache Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"HTTP Error: 403, The caller does not have permission","status":403},"status":500}
 [warn] !  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
-[debug] [2023-12-01T09:42:35.949Z] [functions] Watching "D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions" for Cloud Functions...
-[debug] [2023-12-01T09:42:35.953Z] Validating nodejs source
-[debug] [2023-12-01T09:42:37.135Z] > [functions] package.json contents: {
+[debug] [2023-12-01T09:52:05.952Z] [functions] Watching "D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions" for Cloud Functions...
+[debug] [2023-12-01T09:52:05.959Z] Validating nodejs source
+[debug] [2023-12-01T09:52:07.291Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -57,220 +57,22 @@
   },
   "private": true
 }
-[debug] [2023-12-01T09:42:37.136Z] Building nodejs source
-[debug] [2023-12-01T09:42:37.136Z] Failed to find version of module node: reached end of search path D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules
+[debug] [2023-12-01T09:52:07.291Z] Building nodejs source
+[debug] [2023-12-01T09:52:07.291Z] Failed to find version of module node: reached end of search path D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules
 [warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
-[debug] [2023-12-01T09:42:37.138Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-12-01T09:42:37.151Z] Found firebase-functions binary at 'D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8169
+[debug] [2023-12-01T09:52:07.293Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-01T09:52:07.302Z] Found firebase-functions binary at 'D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8685
 
 [info] API server listening at http://localhost:9000
 
-[debug] [2023-12-01T09:42:37.800Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-12-01T09:42:47.817Z] [functions] Loaded functions definitions from source: app.
-[debug] [2023-12-01T09:42:47.819Z] [functions[us-central1-app]] http function initialized (http://127.0.0.1:5000/react-native-callkit/us-central1/app).
+[debug] [2023-12-01T09:52:08.027Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-12-01T09:52:18.040Z] [functions] Loaded functions definitions from source: app.
+[debug] [2023-12-01T09:52:18.042Z] [functions[us-central1-app]] http function initialized (http://127.0.0.1:5000/react-native-callkit/us-central1/app).
 [info] i  functions: Loaded functions: app 
 [warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
-[info] {
-  token: 'dbMagJ-YQsiR9tT04NtnzT:APA91bHNdClCNWLHWXCJANpTAhpk2moE4_8PklnCQHPWS1TXiG4IDDF-NSx-ERZ7rCkddKv2pyQPfZTifivDblhZHdZhS36JjRIok8KvX7yZj1ZI8W9nv6cArN9jFlcaB1XsGFna9bEm',
-  platform: 'ANDROID'
-} {
-  name: 'Person A',
-  callerId: '31839619',
-  token: 'e_aftmjiQuSOS6e4Iy3PK8:APA91bEZg5fBSEiHfMNMmZFYJ_wul9n9mTZhRpyvjQY9BznHTZMdXjbJtntJ3s5nGXZXEBz3VUP1eCmHS6Y6N5yMEsKIfE_x-LONRHYMNf0G-nSbv2eEfHTsa8CYJm5yT_ayVy1vWx6N',
-  platform: 'ANDROID'
-} {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiJmYjFkNmQyOS01NTgwLTQ2MjUtOTU3My05YTMwZTQwMjM2MGEiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTcwMDIzMDMwMSwiZXhwIjoxNzAwODM1MTAxfQ.u6bx1-7Va0MjKwC240iFh9bRH7oZN_nJWF9qU1IV8_o'
-}
+[info] 400 !mast projects/voice-83fbc/messages/0:1701425154737238%a4048575f9fd7ecd
+Successfully sent message: projects/voice-83fbc/messages/0:1701425154737238%a4048575f9fd7ecd
 
-[info] 400 !mast
+[info] POST /initiate-call 400 575.024 ms - 65
 
-[info] Successfully sent message: projects/voice-83fbc/messages/0:1701423772309760%a4048575f9fd7ecd
-
-[info] POST /initiate-call 400 761.820 ms - 65
-
-[info] 400 !mast
-Successfully sent message: projects/voice-83fbc/messages/0:1701423842994918%a4048575f9fd7ecd
-
-[info] POST /update-call 400 187.195 ms - 65
-
-[info] {
-  token: 'dbMagJ-YQsiR9tT04NtnzT:APA91bHNdClCNWLHWXCJANpTAhpk2moE4_8PklnCQHPWS1TXiG4IDDF-NSx-ERZ7rCkddKv2pyQPfZTifivDblhZHdZhS36JjRIok8KvX7yZj1ZI8W9nv6cArN9jFlcaB1XsGFna9bEm',
-  platform: 'ANDROID'
-} {
-  name: 'Person A',
-  callerId: '31839619',
-  token: 'e_aftmjiQuSOS6e4Iy3PK8:APA91bEZg5fBSEiHfMNMmZFYJ_wul9n9mTZhRpyvjQY9BznHTZMdXjbJtntJ3s5nGXZXEBz3VUP1eCmHS6Y6N5yMEsKIfE_x-LONRHYMNf0G-nSbv2eEfHTsa8CYJm5yT_ayVy1vWx6N',
-  platform: 'ANDROID'
-} {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiJmYjFkNmQyOS01NTgwLTQ2MjUtOTU3My05YTMwZTQwMjM2MGEiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTcwMDIzMDMwMSwiZXhwIjoxNzAwODM1MTAxfQ.u6bx1-7Va0MjKwC240iFh9bRH7oZN_nJWF9qU1IV8_o'
-}
-
-[info] 400 !mast
-Successfully sent message: projects/voice-83fbc/messages/0:1701423844411554%a4048575f9fd7ecd
-
-[info] POST /initiate-call 400 212.619 ms - 65
-
-[info] 400 !mast
-
-[info] Successfully sent message: projects/voice-83fbc/messages/0:1701423881474668%a4048575f9fd7ecd
-POST /update-call 400 206.184 ms - 65
-
-[info] {
-  token: 'dbMagJ-YQsiR9tT04NtnzT:APA91bHNdClCNWLHWXCJANpTAhpk2moE4_8PklnCQHPWS1TXiG4IDDF-NSx-ERZ7rCkddKv2pyQPfZTifivDblhZHdZhS36JjRIok8KvX7yZj1ZI8W9nv6cArN9jFlcaB1XsGFna9bEm',
-  platform: 'ANDROID'
-} {
-  name: 'Person A',
-  callerId: '31839619',
-  token: 'e_aftmjiQuSOS6e4Iy3PK8:APA91bEZg5fBSEiHfMNMmZFYJ_wul9n9mTZhRpyvjQY9BznHTZMdXjbJtntJ3s5nGXZXEBz3VUP1eCmHS6Y6N5yMEsKIfE_x-LONRHYMNf0G-nSbv2eEfHTsa8CYJm5yT_ayVy1vWx6N',
-  platform: 'ANDROID'
-} {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiJmYjFkNmQyOS01NTgwLTQ2MjUtOTU3My05YTMwZTQwMjM2MGEiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTcwMDIzMDMwMSwiZXhwIjoxNzAwODM1MTAxfQ.u6bx1-7Va0MjKwC240iFh9bRH7oZN_nJWF9qU1IV8_o'
-}
-
-[info] 400 !mast
-Successfully sent message: projects/voice-83fbc/messages/0:1701423899862465%a4048575f9fd7ecd
-POST /initiate-call 400 191.351 ms - 65
-
-[debug] [2023-12-01T09:46:48.640Z] DEBUG: File D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\app.js changed, reloading triggers
-[debug] [2023-12-01T09:46:48.705Z] DEBUG: File D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\app.js changed, reloading triggers
-[debug] [2023-12-01T09:46:49.707Z] Validating nodejs source
-[debug] [2023-12-01T09:46:51.512Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "app.js",
-  "dependencies": {
-    "apn": "https://github.com/node-apn/node-apn.git",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "fcm-notification": "^2.0.0",
-    "firebase-admin": "^11.11.1",
-    "firebase-functions": "^4.5.0",
-    "morgan": "^1.10.0",
-    "node-fetch": "^2.6.1",
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2023-12-01T09:46:51.512Z] Building nodejs source
-[debug] [2023-12-01T09:46:51.512Z] Failed to find version of module node: reached end of search path D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules
-[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
-[debug] [2023-12-01T09:46:51.513Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-12-01T09:46:51.523Z] Found firebase-functions binary at 'D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8228
-
-[error] node:events:491
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use :::9001
-    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
-    at listenInCluster (node:net:1788:12)
-    at Server.listen (node:net:1876:7)
-    at Function.listen (D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules\express\lib\application.js:635:24)
-    at Object.<anonymous> (D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\app.js:138:5)
-    at Module._compile (node:internal/modules/cjs/loader:1254:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
-    at Module.load (node:internal/modules/cjs/loader:1117:32)
-    at Module._load (node:internal/modules/cjs/loader:958:12)
-    at Module.require (node:internal/modules/cjs/loader:1141:19)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1767:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -4091,
-  syscall: 'listen',
-  address: '::',
-  port: 9001
-}
-
-Node.js v18.15.0
-
-[debug] [2023-12-01T09:46:53.124Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8228/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8228 {"message":"request to http://localhost:8228/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8228","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
-[error] !!  functions: Failed to load function definition from source: FetchError: request to http://127.0.0.1:8228/__/functions.yaml failed, reason: read ECONNRESET {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://127.0.0.1:8228/__/functions.yaml failed, reason: read ECONNRESET"}}
-[debug] [2023-12-01T09:47:25.500Z] ----------------------------------------------------------------------
-[debug] [2023-12-01T09:47:25.502Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\starr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
-[debug] [2023-12-01T09:47:25.502Z] CLI Version:   12.9.1
-[debug] [2023-12-01T09:47:25.503Z] Platform:      win32
-[debug] [2023-12-01T09:47:25.503Z] Node Version:  v18.15.0
-[debug] [2023-12-01T09:47:25.503Z] Time:          Fri Dec 01 2023 15:17:25 GMT+0530 (India Standard Time)
-[debug] [2023-12-01T09:47:25.503Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2023-12-01T09:47:25.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-12-01T09:47:25.562Z] > authorizing via signed-in user (merchant.rishita2912@gmail.com)
-[debug] [2023-12-01T09:47:25.562Z] [iam] checking project react-native-callkit for permissions ["firebase.projects.get"]
-[debug] [2023-12-01T09:47:25.564Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions [none]
-[debug] [2023-12-01T09:47:25.564Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions x-goog-quota-user=projects/react-native-callkit
-[debug] [2023-12-01T09:47:25.564Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2023-12-01T09:47:27.279Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions 200
-[debug] [2023-12-01T09:47:27.279Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-native-callkit:testIamPermissions {}
-[debug] [2023-12-01T09:47:27.280Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project react-native-callkit:
-
-  firebase.projects.get
-[debug] [2023-12-01T09:47:27.283Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-12-01T09:47:27.284Z] defaultcredentials: writing to file C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
-[debug] [2023-12-01T09:47:27.285Z] DEBUG: Setting GAC to C:\Users\starr\AppData\Roaming\firebase\merchant_rishita2912_gmail.com_application_default_credentials.json
-[debug] [2023-12-01T09:47:27.286Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig [none]
-[debug] [2023-12-01T09:47:27.679Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig 403
-[debug] [2023-12-01T09:47:27.679Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-native-callkit/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2023-12-01T09:47:27.680Z] Failed to get Admin SDK config for react-native-callkit, falling back to cache Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project react-native-callkit. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"HTTP Error: 403, The caller does not have permission","status":403},"status":500}
-[warn] !  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
-[debug] [2023-12-01T09:47:27.686Z] [functions] Watching "D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions" for Cloud Functions...
-[debug] [2023-12-01T09:47:27.692Z] Validating nodejs source
-[debug] [2023-12-01T09:47:28.992Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "app.js",
-  "dependencies": {
-    "apn": "https://github.com/node-apn/node-apn.git",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "fcm-notification": "^2.0.0",
-    "firebase-admin": "^11.11.1",
-    "firebase-functions": "^4.5.0",
-    "morgan": "^1.10.0",
-    "node-fetch": "^2.6.1",
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2023-12-01T09:47:28.992Z] Building nodejs source
-[debug] [2023-12-01T09:47:28.993Z] Failed to find version of module node: reached end of search path D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules
-[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
-[debug] [2023-12-01T09:47:28.995Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-12-01T09:47:29.005Z] Found firebase-functions binary at 'D:\DINOSYS INFOTECH\Signal\videosdk-rtc-react-native-call-trigger-example\server\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8190
-
-[info] API server listening at http://localhost:9000
-
-[debug] [2023-12-01T09:47:29.786Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-12-01T09:47:39.803Z] [functions] Loaded functions definitions from source: app.
-[debug] [2023-12-01T09:47:39.804Z] [functions[us-central1-app]] http function initialized (http://127.0.0.1:5000/react-native-callkit/us-central1/app).
-[info] i  functions: Loaded functions: app 
-[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 

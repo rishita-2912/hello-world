@@ -87,7 +87,7 @@ app.post("/initiate-call", (req, res) => {
 
       } else {
         res.status(400).send(response);
-        console.log("400 !mast")
+        console.log("400 !mast",response)
 
       }
     });
