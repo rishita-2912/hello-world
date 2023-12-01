@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 app.post("/initiate-call", (req, res) => {
   const { calleeInfo, callerInfo, videoSDKInfo } = req.body;
-
+    // console.log(calleeInfo,callerInfo,videoSDKInfo);
   if (calleeInfo.platform === "iOS") {
     let deviceToken = calleeInfo.APN;
     var options = {
@@ -135,7 +135,7 @@ app.post("/update-call", (req, res) => {
   });
 });
 
-app.listen(9000, () => {
+app.listen(9001, () => {
   console.log(`API server listening at http://localhost:9000`);
 });
 
